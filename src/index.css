@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', -apple-system, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #87CEEB, #B0E2FF);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+.search-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  padding: 10px 15px;
+}
+#searchCity {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+}
+.weather-app {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 24px;
+  padding: 28px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.icon {
+    width: 120px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+/* --- Header --- */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.city {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.temp {
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1;
+  margin: 10px 0;
+}
+
+.condition {
+  font-size: 1.2rem;
+  opacity: 0.92;
+  margin-bottom: 10px;
+}
+
+.minMax {
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+/* --- Metric Cards --- */
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.metric-card {
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 18px;
+  padding: 18px 12px;
+  text-align: center;
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.metric-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.metric-label {
+  font-size: 0.85rem;
+  opacity: 0.8;
+  margin-bottom: 6px;
+}
+
+.metric-value {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+/* Error Message Styles */
+.error-message {
+    background-color: rgba(198, 40, 40, 0.1);     /* Very light red background */
+    color: #ffcdd2;                                /* Soft red text (Material Design 'Light Red 200') */
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+    text-align: center;
+    display: none;                                 /* Hidden by default */
+    animation: fadeIn 0.3s ease-in-out;
+    border: 1px solid rgba(239, 83, 80, 0.3);      /* Subtle red border */
+}
+
+.error-message.visible {
+    display: block;                                /* Shows when this class is added */
+}
+
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+        transform: translateY(-10px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
