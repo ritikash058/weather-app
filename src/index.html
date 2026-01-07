@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>London Weather Metrics</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="weather-app">
+  <div id="error-message" class="error-message"></div>
+  <header class="search-container">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="11" cy="11" r="8"/>
+    <path d="m21 21-4.35-4.35"/>
+    </svg>
+    <input type="text" class="search" id="searchCity" placeholder="Search for a city...">
+  </header>
+  
+  <div class="header">
+    <div id="city" class="city">London, GB</div>
+    <div id="temperature" class="temp">0.18<span>°C</span></div>
+    <div><img class="icon" id="icon" src="../assets/sunny.png" alt="Weather icon"></div>
+    <div id="condition" class="condition">Clear Sky</div>
+    <div id="minMax" class="minMax">H: 0.18°C / L: 0.18°C</div>
+  </div>
+
+  <!-- Metric Cards -->
+  <div class="metrics">
+    <div class="metric-card">
+      <div class="metric-label">Feels Like</div>
+      <div class="metric-value" id="feelsLike">-4.63°C</div>
+    </div>
+
+    <div class="metric-card">
+      <div class="metric-label">Humidity</div>
+      <div class="metric-value" id="humidity">86%</div>
+    </div>
+
+    <div class="metric-card">
+      <div class="metric-label">Pressure</div>
+      <div class="metric-value" id="pressure">1005 hPa</div>
+    </div>
+
+    <div class="metric-card">
+      <div class="metric-label">Visibility</div>
+      <div class="metric-value" id="visibility">10 km</div>
+    </div>
+
+    <div class="metric-card">
+      <div class="metric-label">Wind Speed</div>
+      <div class="metric-value" id="wind">4.9 m/s</div>
+    </div>
+
+    <div class="metric-card">
+      <div class="metric-label">Cloud Cover</div>
+      <div class="metric-value" id="clouds">9%</div>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
