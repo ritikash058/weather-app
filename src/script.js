@@ -13,7 +13,7 @@ const weatherIconMap = {
 
 document.addEventListener('DOMContentLoaded', () => {
     const api = {
-        key: "997d176d64a32b99a815ce5972bb4f0a",
+        key: "YOUR-API-KEY",
         base: "https://api.openweathermap.org/data/2.5/" // Changed to https
     }
 
