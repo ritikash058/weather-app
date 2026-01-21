@@ -17,3 +17,12 @@ A simple weather app built with Electron, React, and OpenWeatherMap API.
 ![Weather App](./assets/weather-shot.png)
 
 > Note: The screenshot shows the weather app UI. You can customize the styling and data according to your needs. You can search for any city and get the weather details.
+
+## How to make distribution app
+```bash
+  npm run package
+```
+```bash
+  npm run make
+```
+> Note: The distribution app will be available in the `out` directory.
